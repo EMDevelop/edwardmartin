@@ -4,6 +4,8 @@ A personal Website for my CV, and other aspects of the coding world that interes
 
 This project is currently a work in progress.
 
+Check it out here: www.edwardjamesmartin.co.uk
+
 ### React Setup
 
 - Make a project with no capital letters or spaces in the name
