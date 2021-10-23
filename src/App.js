@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <main>
         <section className="section-one">
-          <Typewriter text="first page" />
+          <Typewriter textArray={['HTML', 'SCSS', 'Javascript', 'ruby']} />
         </section>
         <section className="section-two">
           <h1>second page</h1>
