@@ -1,0 +1,19 @@
+header {
+  height: 8vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  h1 {
+    grid-column: 5/9;
+    font-size: $text-title;
+    color: $text-colour-white;
+    justify-self: center;
+  }
+
+  button {
+    grid-column: 11/12;
+  }
+}

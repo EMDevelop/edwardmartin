@@ -1,0 +1,16 @@
+button {
+  width: 60px;
+  height: 30px;
+  border: $button-border;
+  background-color: transparent;
+  color: $text-colur-pop;
+  border-radius: $radius;
+  justify-self: center;
+}
+
+button:hover {
+  box-shadow: 0 2px 4px $text-colour-melon;
+  transform: translate(0px, -2px);
+  // animation-name: translate;
+  // animation-duration: 2220ms;
+}
