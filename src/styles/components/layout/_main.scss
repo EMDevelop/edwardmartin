@@ -1,0 +1,32 @@
+// Full Page Snap
+main {
+  height: fit-content;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 92vh;
+
+  section {
+    height: 92vh;
+    @include flex-center;
+    scroll-snap-align: start;
+  }
+
+  .section-one {
+    box-shadow: 0 2px 4px $text-colour-melon;
+  }
+  .section-two {
+    background-color: $colour-background2;
+  }
+  .section-three {
+  }
+  .section-four {
+    background-color: $colour-background2;
+  }
+}
+
+// hide scrollbar
+main::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

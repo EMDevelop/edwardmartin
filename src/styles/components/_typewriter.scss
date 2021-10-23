@@ -1,0 +1,26 @@
+.typing-container {
+}
+
+.typing {
+  position: relative;
+  margin-left: $text-margin;
+}
+.typing::after {
+  position: absolute;
+  content: '';
+  margin-left: $text-margin;
+  width: 1px;
+  right: -5px;
+  height: 100%;
+  border-right: 2px solid $text-colur-pop;
+  animation: blink 1s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

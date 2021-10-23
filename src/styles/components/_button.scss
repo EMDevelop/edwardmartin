@@ -10,7 +10,7 @@ button {
 
 button:hover {
   box-shadow: 0 2px 4px $text-colour-melon;
-  transform: translate(0px, -2px);
+  transform: translate(0px, -2px) ease;
   // animation-name: translate;
   // animation-duration: 2220ms;
 }
