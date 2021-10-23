@@ -12,7 +12,9 @@ function App() {
           <Typewriter textArray={['HTML', 'SCSS', 'Javascript', 'ruby']} />
         </section>
         <section className="section-two">
-          <h1>second page</h1>
+          <Typewriter
+            textArray={['hehehehehehe', 'owlie is back', 'botches']}
+          />
         </section>
         <section className="section-three">
           <h1>third page</h1>
