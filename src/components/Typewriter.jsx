@@ -1,41 +1,56 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+// How To Use:
+
+// displayType = String: repeat | String: remain
+// if remain:
+//    textString = String ""
+// else
+//    textArray = Array [ , , ]
+
 export default function Typewriter(props) {
   const [text, setText] = useState(['add', 'props']);
   const [typingText, setTypingText] = useState('');
+  const typingRef = useRef();
+  const displayType = props.displayType;
+  const textArray = props.textArray;
+  const textString = props.textString;
 
   let textCount = 0;
   let index = 0;
   let currentText = '';
-  let letter = '';
-
-  const typingRef = useRef();
+  let letterAccumulator = '';
 
   useEffect(() => {
-    // setText(props.text);
-    type();
+    displayType === 'repeat' ? typeRepeat() : typeRemain();
   }, []);
 
-  function type() {
-    // RESET TO FIRST WORD FROM LAST
-    if (textCount === props.textArray.length) textCount = 0;
-
+  function typeRepeat() {
+    // Array input
+    if (textCount === textArray.length) textCount = 0; // RESET TO FIRST WORD FROM LAST
     // CURRENT TEXT TO LOOP THROUGH
-    currentText = props.textArray[textCount];
-    letter = currentText.slice(0, ++index);
+    currentText = textArray[textCount];
 
+    letterAccumulator = currentText.slice(0, ++index);
     // UPDATE PAGE
-    typingRef.current.textContent = letter;
-
+    typingRef.current.textContent = letterAccumulator;
     // MOVE ONTO NEXT WORD
-    if (letter.length === currentText.length) {
+    if (letterAccumulator.length === currentText.length) {
       textCount++;
       index = 0;
     }
-
     // Run Continiously
-    setTimeout(type, 400);
+    setTimeout(typeRepeat, 400);
   }
+
+  const typeRemain = () => {
+    if (index < textString.length) {
+      letterAccumulator += textString[index];
+      typingRef.current.textContent = letterAccumulator;
+      ++index;
+      setTimeout(typeRemain, 200);
+    }
+  };
 
   return (
     <div className="typing-container">

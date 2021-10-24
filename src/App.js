@@ -9,10 +9,16 @@ function App() {
       <Navbar />
       <main>
         <section className="section-one">
-          <Typewriter textArray={['HTML', 'SCSS', 'Javascript', 'ruby']} />
+          <Typewriter
+            displayType="remain"
+            textString="Welcome to my website, I hope you enjoy!"
+          />
         </section>
         <section className="section-two">
-          <Typewriter textArray={['This', 'is', 'a', 'template']} />
+          <Typewriter
+            displayType="repeat"
+            textArray={['HTML', 'SCSS', 'Javascript', 'ruby']}
+          />
         </section>
         <section className="section-three">
           <h1>third page</h1>
