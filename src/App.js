@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Navbar from './components/layout/Navbar';
 import Typewriter from './components/Typewriter';
+import MainBanner from './components/sections/MainBanner';
 
 function App() {
   return (
@@ -9,10 +10,7 @@ function App() {
       <Navbar />
       <main>
         <section className="section-one">
-          <Typewriter
-            displayType="remain"
-            textString="Welcome to my website, I hope you enjoy!"
-          />
+          <MainBanner />
         </section>
         <section className="section-two">
           <Typewriter
@@ -21,10 +19,10 @@ function App() {
           />
         </section>
         <section className="section-three">
-          <h1>third page</h1>
+          <p>Github Projects</p>
         </section>
         <section className="section-four">
-          <h1>owww yeeeeeeeee</h1>
+          <p>Experience</p>
         </section>
       </main>
     </>

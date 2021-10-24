@@ -13,6 +13,8 @@ main {
 
   .section-one {
     box-shadow: 0 2px 4px $text-colour-melon;
+    display: flex;
+    flex-direction: column;
   }
   .section-two {
     background-color: $colour-background2;
