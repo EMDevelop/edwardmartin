@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.scss';
 import Navbar from './components/layout/Navbar';
 import Typewriter from './components/Typewriter';
 import MainBanner from './components/sections/MainBanner';
 
 function App() {
+  const two = useRef('');
+
   return (
     <>
       <Navbar />
       <main>
         <section className="section-one">
-          <MainBanner />
+          <MainBanner scrollTo={two} />
         </section>
-        <section className="section-two">
+        <section className="section-two" ref={two}>
           <Typewriter
             displayType="repeat"
             textArray={['HTML', 'SCSS', 'Javascript', 'ruby']}

@@ -2,14 +2,18 @@ import React from 'react';
 import ScrollButton from '../ScrollButton';
 import Typewriter from '../Typewriter';
 
-export default function MainBanner() {
+export default function MainBanner(props) {
+  const onScrollButtonClick = () => {
+    props.scrollTo.current.scrollIntoView();
+  };
+
   return (
     <div className="banner-container">
       <div className="banner-typing">
         <Typewriter displayType="remain" textString="Work In Progress :)" />
       </div>
       <div className="banner-button">
-        <ScrollButton />
+        <ScrollButton click={() => onScrollButtonClick()} />
       </div>
     </div>
   );
