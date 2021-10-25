@@ -2,9 +2,9 @@
 @import 'styles/variables';
 @import 'styles/components/layout/navbar';
 @import 'styles/components/button';
-@import 'styles/components/layout/main';
 @import 'styles/components/typewriter';
 @import 'styles/components/scrollButton';
+@import 'styles/components/sections/mainBanner';
 
 // Page Layout
 html,
@@ -28,4 +28,35 @@ h6 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+main {
+  height: fit-content;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 92vh;
+
+  section {
+    height: 92vh;
+    @include flex-center;
+    scroll-snap-align: start;
+  }
+
+  .section-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-two {
+  }
+  .section-three {
+  }
+  .section-four {
+  }
+}
+
+// hide scrollbar
+main::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

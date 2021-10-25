@@ -52,9 +52,5 @@ export default function Typewriter(props) {
     }
   };
 
-  return (
-    <div className="typing-container">
-      <h1 className="typing" ref={typingRef}></h1>
-    </div>
-  );
+  return <h1 className="typing" ref={typingRef}></h1>;
 }

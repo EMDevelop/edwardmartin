@@ -4,9 +4,13 @@ import Typewriter from '../Typewriter';
 
 export default function MainBanner() {
   return (
-    <>
-      <Typewriter displayType="remain" textString="Work In Progress :)" />
-      <ScrollButton />
-    </>
+    <div className="banner-container">
+      <div className="banner-typing">
+        <Typewriter displayType="remain" textString="Work In Progress :)" />
+      </div>
+      <div className="banner-button">
+        <ScrollButton />
+      </div>
+    </div>
   );
 }
