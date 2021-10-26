@@ -7,6 +7,11 @@
 @import 'styles/components/sections/mainBanner';
 
 // Page Layout
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html,
 body {
   margin: 0px;
