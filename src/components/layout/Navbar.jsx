@@ -12,7 +12,7 @@ export default function Navbar() {
           link="https://docs.google.com/presentation/d/1CG2ZNTadtv0T_jKB6r0mOOuvifLduVxQ2i4idS8MjOE/export/pdf"
         />
         <CTAButton
-          text="github"
+          text="GITHUB"
           buttonClass="git-button"
           link="https://github.com/EMDevelop"
         />
