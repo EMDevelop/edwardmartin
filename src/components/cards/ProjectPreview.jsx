@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
+import ProjectProfile from './ProjectProfile';
 
 export default function ProjectPreview(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function ProjectPreview(props) {
       <div>
         {isOpen && (
           <Modal open={isOpen} onClose={() => onClosingModel()}>
-            Okay
+            <ProjectProfile previewProps={props} />
           </Modal>
         )}
       </div>
