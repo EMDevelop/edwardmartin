@@ -9,10 +9,10 @@ export default function Navbar() {
         <CTAButton
           text="CV"
           buttonClass="cv-button"
-          link="https://docs.google.com/presentation/d/1CG2ZNTadtv0T_jKB6r0mOOuvifLduVxQ2i4idS8MjOE/export/pdf"
+          link="/EdwardMartinCV.pdf"
         />
         <CTAButton
-          text="GITHUB"
+          text="GIT"
           buttonClass="git-button"
           link="https://github.com/EMDevelop"
         />

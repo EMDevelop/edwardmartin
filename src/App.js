@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import './App.scss';
 import Navbar from './components/layout/Navbar';
-import Typewriter from './components/Typewriter';
+// import Typewriter from './components/Typewriter';
 import MainBanner from './components/sections/MainBanner';
+import Projects from './components/sections/Projects';
 
 function App() {
   const two = useRef('');
@@ -15,10 +16,11 @@ function App() {
           <MainBanner scrollTo={two} />
         </section>
         <section className="section-two" ref={two}>
-          <Typewriter
+          {/* <Typewriter
             displayType="repeat"
             textArray={['HTML', 'SCSS', 'Javascript', 'ruby']}
-          />
+          /> */}
+          <Projects />
         </section>
         <section className="section-three">
           <p>Github Projects</p>
