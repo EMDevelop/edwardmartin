@@ -6,8 +6,13 @@
   border-radius: $radius;
   background: $gradient;
   justify-self: center;
+  margin-top: $text-margin;
   margin-bottom: $text-margin;
   color: $text-colour-white;
+}
+
+.project-preview-card:hover {
+  transform: translate(0px, -10px);
 }
 
 .preview-card-click {
@@ -22,4 +27,5 @@
   width: 85%;
   height: auto;
   margin-top: $text-margin;
+  border-radius: $radius;
 }
