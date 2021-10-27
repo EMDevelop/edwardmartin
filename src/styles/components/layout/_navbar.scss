@@ -7,9 +7,16 @@ header {
     font-size: $text-title;
     color: $text-colour-white;
     justify-self: center;
+    grid-gap: $gap;
   }
 
-  button {
-    grid-column: 11/12;
+  .cv-button {
+    grid-column: 11/11;
+    margin-right: $gap;
+  }
+
+  .git-button {
+    grid-column: 12/12;
+    margin-right: $gap;
   }
 }
