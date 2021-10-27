@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProjectPreview from '../cards/ProjectPreview';
+import ProjectProfile from '../cards/ProjectProfile';
 
 export default function Projects() {
   const [projects, setProjects] = useState({});
@@ -31,7 +32,15 @@ export default function Projects() {
           <div className="project-list">
             {projects.map((project) => {
               return (
-                <ProjectPreview name={project.name} image={project.image} />
+                <ProjectPreview
+                  name={project.name}
+                  image={project.image}
+                  description={project.description}
+                  github={project.github}
+                  language={project.language}
+                  website={project.website}
+                  tools={project.tools}
+                />
               );
             })}
             {/* <ProjectPreview
