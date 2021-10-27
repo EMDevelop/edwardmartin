@@ -29,8 +29,10 @@ export default function Projects() {
         <div className="projects-container">
           <h1 className="project-header">My Projects</h1>
           <div className="project-list">
-            {projects.forEach((project) => {
-              return <ProjectPreview name={project.name} />;
+            {projects.map((project) => {
+              return (
+                <ProjectPreview name={project.name} image={project.image} />
+              );
             })}
             {/* <ProjectPreview
               name="VeganSwap"
