@@ -1,6 +1,11 @@
 // Colour
 $colour-background: #0a192fff;
 $colour-background2: #112240;
+$gradient: linear-gradient(
+  to right bottom,
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.2)
+);
 
 // Font Size
 $text-title: 20px;
@@ -17,7 +22,7 @@ $text-colour-melon: #fcb4b1ff;
 // Outline / Shapes
 $radius: 5px;
 $button-border: 2px solid $text-colur-pop;
-$gap: 10px;
 
 // Margin / Padding
 $text-margin: 10px;
+$gap: 10px;

@@ -1,0 +1,24 @@
+.projects-container {
+  width: 100%;
+  height: 92vh;
+  @include grid-12;
+  grid-template-rows: 2fr 8fr;
+}
+
+.project-list {
+  grid-column: 1/13;
+  // background-color: white;
+  max-height: 70vh;
+  // overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  // flex-direction: row;
+  margin-right: $text-margin;
+  margin-left: $text-margin;
+}
+
+.project-header {
+  grid-column: 1/13;
+  justify-self: center;
+}

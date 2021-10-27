@@ -1,0 +1,25 @@
+.project-preview-card {
+  height: 160px;
+  min-width: 200px;
+  width: 200px;
+  background-color: $gradient;
+  border-radius: $radius;
+  background: $gradient;
+  justify-self: center;
+  margin-bottom: $text-margin;
+  color: $text-colour-white;
+}
+
+.preview-card-click {
+  width: 100%;
+  height: 100%;
+  @include flex-center;
+  flex-direction: column;
+  grid-gap: $text-margin;
+}
+
+.preview-image {
+  width: 85%;
+  height: auto;
+  margin-top: $text-margin;
+}

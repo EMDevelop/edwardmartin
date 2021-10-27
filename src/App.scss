@@ -1,16 +1,9 @@
-@import 'styles/mixins';
-@import 'styles/variables';
-@import 'styles/components/layout/navbar';
-@import 'styles/components/button';
-@import 'styles/components/typewriter';
-@import 'styles/components/scrollButton';
-@import 'styles/components/sections/mainBanner';
+@import 'styles/imports';
 
 // Page Layout
-
-* {
-  -webkit-overflow-scrolling: touch;
-}
+// * {
+//   -webkit-overflow-scrolling: touch;
+// }
 
 html,
 body {

@@ -1,0 +1,33 @@
+.model-behind {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $colour-background;
+  z-index: 1001;
+}
+
+.model-behind-hidden {
+  display: hidden;
+}
+
+.modal-hidden {
+  display: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40%;
+  min-height: 40%;
+  height: fit-content;
+  width: fit-content;
+  padding: $gap;
+  z-index: 1000;
+  border-radius: $radius;
+  background: $gradient;
+  @include flex-center;
+}
