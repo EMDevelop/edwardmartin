@@ -6,7 +6,6 @@ export default function Modal({ open, children, onClose }) {
 
   return ReactDom.createPortal(
     <div id="me" className={open ? 'model-behind' : 'model-behind-hidden'}>
-      <button onClick={onClose}>Close</button>
       <div className={open ? 'modal' : 'modal-hidden'}>{children}</div>
     </div>,
     document.getElementById('portal')

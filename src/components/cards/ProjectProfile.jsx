@@ -8,9 +8,9 @@ export default function ProjectProfile(props) {
   return (
     <div className="project-profile-container">
       <div className="close-container">
-        <button className="close red"></button>
-        <button className="close amber"></button>
-        <button className="close green"></button>
+        <button className="close red" onClick={props.onClose}></button>
+        <button className="close amber" onClick={props.onClose}></button>
+        <button className="close green" onClick={props.onClose}></button>
       </div>
       <div className="address-bar">
         <input

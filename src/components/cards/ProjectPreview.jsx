@@ -22,8 +22,11 @@ export default function ProjectPreview(props) {
       </div>
       <div>
         {isOpen && (
-          <Modal open={isOpen} onClose={() => onClosingModel()}>
-            <ProjectProfile previewProps={props} />
+          <Modal open={isOpen}>
+            <ProjectProfile
+              previewProps={props}
+              onClose={() => onClosingModel()}
+            />
           </Modal>
         )}
       </div>
