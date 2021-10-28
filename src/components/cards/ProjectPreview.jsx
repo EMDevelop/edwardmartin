@@ -13,7 +13,7 @@ export default function ProjectPreview(props) {
   return (
     <div className="project-preview-card">
       <div className="preview-card-click" onClick={() => setIsOpen(true)}>
-        {props.name}
+        <h4>{props.name}</h4>
         <img
           className="preview-image"
           src={props.image}

@@ -11,6 +11,7 @@ $gradient: linear-gradient(
 $text-title: 20px;
 $text-medium: 16px;
 $text-small: 13px;
+$test-rem: 1vw;
 
 // Font website
 // https://coolors.co/0a192f-ffffff-8a92ad-fcb4b1-f97068
@@ -18,10 +19,12 @@ $text-colour-white: white;
 $text-colour-frosty: #8a92adff;
 $text-colur-pop: #f97068ff;
 $text-colour-melon: #fcb4b1ff;
+$text-grey: #808080;
 
 // Outline / Shapes
 $radius: 5px;
 $button-border: 2px solid $text-colur-pop;
+$circle: 50%;
 
 // Margin / Padding
 $text-margin: 10px;

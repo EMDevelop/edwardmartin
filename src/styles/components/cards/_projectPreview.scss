@@ -1,7 +1,9 @@
 .project-preview-card {
-  height: 400px;
-  min-width: 400px;
-  width: 200px;
+  max-height: 400px;
+  height: auto;
+  max-width: 400px;
+  width: 60%;
+  padding-bottom: $text-margin;
   background-color: $gradient;
   border-radius: $radius;
   background: $gradient;
@@ -9,6 +11,10 @@
   margin-top: $text-margin;
   margin-bottom: $text-margin;
   color: $text-colour-white;
+
+  h4 {
+    font-size: $test-rem;
+  }
 }
 
 .project-preview-card:hover {

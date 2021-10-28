@@ -33,6 +33,7 @@ export default function Projects() {
             {projects.map((project) => {
               return (
                 <ProjectPreview
+                  key={project.row_id}
                   name={project.name}
                   image={project.image}
                   description={project.description}
