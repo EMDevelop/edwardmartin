@@ -15,19 +15,19 @@ function App() {
         <section className="section-one">
           <MainBanner scrollTo={two} />
         </section>
-        <section className="section-two" ref={two}>
+        <section className="section-two" id="section-two" ref={two}>
           {/* <Typewriter
             displayType="repeat"
             textArray={['HTML', 'SCSS', 'Javascript', 'ruby']}
           /> */}
           <Projects />
         </section>
-        <section className="section-three">
+        {/* <section className="section-three">
           <p>Github Projects</p>
         </section>
         <section className="section-four">
           <p>Experience</p>
-        </section>
+        </section> */}
       </main>
     </>
   );

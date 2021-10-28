@@ -28,8 +28,12 @@ export default function ProjectProfile(props) {
         <p>{props.previewProps.description}</p>
       </div>
       <div className="profile tools">
-        <p>Tools: {props.previewProps.tools}</p>
-        <p>Language: {props.previewProps.language}</p>
+        <p>
+          <b>Tools:</b> {props.previewProps.tools}
+        </p>
+        <p>
+          <b>Language:</b> {props.previewProps.language}
+        </p>
       </div>
       <div className="profile image">
         <img

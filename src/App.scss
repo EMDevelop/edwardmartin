@@ -30,6 +30,7 @@ main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 92vh;
+  scroll-behavior: smooth;
 
   section {
     height: 92vh;

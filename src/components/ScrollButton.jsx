@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ScrollButton(props) {
   return (
-    <a href="#" className="scrollButton" onClick={props.click}>
+    <a href="#section-two" className="scrollButton">
       <div id="mouse-scroll">
         <div className="mouse">
           <div className="mouse-in"></div>

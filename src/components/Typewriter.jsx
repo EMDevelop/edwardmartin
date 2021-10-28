@@ -40,7 +40,7 @@ export default function Typewriter(props) {
       index = 0;
     }
     // Run Continiously
-    setTimeout(typeRepeat, 400);
+    setTimeout(typeRepeat, 300);
   }
 
   const typeRemain = () => {
@@ -48,7 +48,9 @@ export default function Typewriter(props) {
       letterAccumulator += textString[index];
       typingRef.current.textContent = letterAccumulator;
       ++index;
-      setTimeout(typeRemain, 200);
+      textString[index] === '.' || textString[index] === ','
+        ? setTimeout(typeRemain, 1000)
+        : setTimeout(typeRemain, 100);
     }
   };
 

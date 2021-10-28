@@ -67,6 +67,7 @@
     h1 {
       align-self: flex-start;
       text-align: left;
+      color: $colour-background;
     }
   }
   .profile.tools {
@@ -80,6 +81,10 @@
     p {
       align-self: flex-start;
       text-align: left;
+    }
+
+    b {
+      color: $text-colur-pop;
     }
   }
 

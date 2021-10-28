@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <header>
         <h1> Edward Martin </h1>
-        <CTAButton
+        {/* <CTAButton
           text="CV"
           buttonClass="cv-button"
           link="/EdwardMartinCV.pdf"
@@ -15,7 +15,7 @@ export default function Navbar() {
           text="GIT"
           buttonClass="git-button"
           link="https://github.com/EMDevelop"
-        />
+        /> */}
       </header>
     </>
   );
