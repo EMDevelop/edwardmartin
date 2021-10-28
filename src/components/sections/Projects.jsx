@@ -8,7 +8,7 @@ export default function Projects() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    getProjects();
+    if (projects != {}) getProjects();
   }, []);
 
   const getProjects = async () => {
