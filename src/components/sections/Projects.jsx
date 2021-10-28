@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProjectPreview from '../cards/ProjectPreview';
 import ProjectProfile from '../cards/ProjectProfile';
+import Loading from '../Loading';
 
 export default function Projects() {
   const [projects, setProjects] = useState({});
@@ -24,110 +25,29 @@ export default function Projects() {
     }
   };
 
-  return (
-    isLoaded && (
-      <>
-        <div className="projects-container">
-          <h1 className="project-header">My Projects</h1>
-          <div className="project-list">
-            {projects.map((project) => {
-              return (
-                <ProjectPreview
-                  key={project.row_id}
-                  name={project.name}
-                  image={project.image}
-                  description={project.description}
-                  github={project.github}
-                  language={project.language}
-                  website={project.website}
-                  tools={project.tools}
-                />
-              );
-            })}
-            {/* <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            />
-            <ProjectPreview
-              name="VeganSwap"
-              description="some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here some description here "
-              github="https://github.com/EMDevelop/veganswap"
-              language="Javascript"
-              image="https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/veganswap/veganswap.gif"
-              tools="React JS, Express JS, PostgreSQL"
-              website="www.veganswap.co.uk"
-            /> */}
-          </div>
+  return isLoaded ? (
+    <>
+      <div className="projects-container">
+        <h1 className="project-header">My Projects</h1>
+        <div className="project-list">
+          {projects.map((project) => {
+            return (
+              <ProjectPreview
+                key={project.row_id}
+                name={project.name}
+                image={project.image}
+                description={project.description}
+                github={project.github}
+                language={project.language}
+                website={project.website}
+                tools={project.tools}
+              />
+            );
+          })}
         </div>
-      </>
-    )
+      </div>
+    </>
+  ) : (
+    <Loading />
   );
 }
