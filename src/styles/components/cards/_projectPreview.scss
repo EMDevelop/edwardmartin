@@ -1,8 +1,9 @@
 .project-preview-card {
   max-height: 400px;
   height: auto;
+
   max-width: 400px;
-  width: 60%;
+  width: 80%;
   padding-bottom: $text-margin;
   background-color: $gradient;
   border-radius: $radius;
@@ -13,12 +14,13 @@
   color: $text-colour-white;
 
   h4 {
-    font-size: $test-rem;
+    font-size: $text-medium;
   }
 }
 
 .project-preview-card:hover {
   transform: translate(0px, -10px);
+  transition: transform 0.5s ease-in-out;
 }
 
 .preview-card-click {
@@ -32,6 +34,7 @@
 .preview-image {
   width: 85%;
   height: auto;
+  max-height: 70%;
   margin-top: $text-margin;
   border-radius: $radius;
 }

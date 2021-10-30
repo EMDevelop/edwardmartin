@@ -36,7 +36,6 @@ main {
     height: 92vh;
     @include flex-center;
     scroll-snap-align: start;
-    padding-bottom: 20px;
   }
 
   .section-one {
