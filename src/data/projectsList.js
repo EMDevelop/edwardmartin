@@ -71,6 +71,15 @@ const projectsList = [
     tools: `Command line, Etherscan API`,
     website: ``,
   },
+  {
+    name: `Takeaway App`,
+    description: `This is a Command Line based application which allows customers to order food from a menu. I call on the Twillo API to send an order confirmation once a customer places an order. I stored my food menu on Google Sheets, and used an external library to fetch the data.`,
+    github: `https://github.com/EMDevelop/Takeaway-App`,
+    language: `Ruby`,
+    image: `https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/takeaway/takeawayApp.gif`,
+    tools: `Command Line, Twillo API, Google Sheets`,
+    website: ``,
+  },
   // {
   //   name: ``,
   //   description: ``,
