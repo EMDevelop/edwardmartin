@@ -1,6 +1,5 @@
 const projectsList = [
   {
-    row_id: 1,
     name: `VeganSwap`,
     description: `My goal of this project is to make it easier for people to use vegan alternatives to the meals and products they love. I am hoping to bring together a community of Vegan, Vegetarian and Meat/Dairy eaters (so everybody), and work together to add alternatives using the apps Add" functionality.`,
     github: `https://github.com/EMDevelop/veganswap`,
@@ -10,7 +9,6 @@ const projectsList = [
     website: `www.veganswap.co.uk`,
   },
   {
-    row_id: 2,
     name: `Just2Connect`,
     description: `Welcome to my first ever website, built from scratch using ReactJS for a local Telephone Systems business Just2Connect.`,
     github: `https://github.com/EMDevelop/Just2ConnectOfficial`,
@@ -20,7 +18,6 @@ const projectsList = [
     website: `www.just2connect.com`,
   },
   {
-    row_id: 3,
     name: `Chitter`,
     description: `This application was built as a clone of Twitter, although it has the functionality of a chatroom. The project was built over a weekend, planned and modelled on Friday and then executed on Saturday and Sunday. I mainly enjoyed learning how to store passwords securely (using Becrypt with SALT and PEPPER hashing), while also building everything with SRP/Encapsulation/Separation of concerns in mind.`,
     github: `https://github.com/EMDevelop/chitter-challenge`,
@@ -30,7 +27,6 @@ const projectsList = [
     website: ``,
   },
   {
-    row_id: 4,
     name: `Bowling`,
     description: `This is an application in which a user can input scores from their game of bowling, and receive a score as an output.`,
     github: `https://github.com/EMDevelop/BowlingScorecardJS`,
@@ -40,7 +36,6 @@ const projectsList = [
     website: ``,
   },
   {
-    row_id: 5,
     name: `Bank Tech Test`,
     description: `This is an example of a coding test, built in Javascript and tested using the Jasmine testing framework. A user can add multiple transactions (both withdraws and deposits) and then, once finished transacting, request for a statement of their previous transactions.`,
     github: `https://github.com/EMDevelop/bankTechTest`,
@@ -50,7 +45,6 @@ const projectsList = [
     website: ``,
   },
   {
-    row_id: 6,
     name: `Notes App`,
     description: `This is a notes app where a user can store notes, inspired by Evernote. You can add notes, delete notes, change the font, store all of the notes in local memory (and fonts in cookies).`,
     github: `https://github.com/EMDevelop/NotesApp`,

@@ -4,38 +4,21 @@ import Loading from '../Loading';
 import projectsList from '../../data/projectsList';
 
 export default function Projects() {
-  // const [projects, setProjects] = useState({});
-  // const [isLoaded, setIsLoaded] = useState(false);
+  let projectIndex = 0;
 
-  // removed dependency on google sheets
-  // this is a serverless app so it's a security risk to expose env variables, even with dotenv
-
-  // useEffect(() => {
-  //   if (projects != {}) getProjects();
-  // }, []);
-
-  // const getProjects = async () => {
-  //   try {
-  //     const response = await fetch(
-  //       `https://v1.nocodeapi.com/emdevelop/google_sheets/VIEmPpnyABtVIhyK?tabId=myProjects`
-  //     );
-  //     const json = await response.json();
-  //     console.log(json.data);
-  //     setProjects(json.data);
-  //     setIsLoaded(true);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+  const incrementIndexByOne = () => {
+    projectIndex += 1;
+  };
 
   return (
     <div className="projects-container">
       <h1 className="project-header">My Projects</h1>
       <div className="project-list">
         {projectsList.map((project) => {
+          incrementIndexByOne();
           return (
             <ProjectPreview
-              key={project.row_id}
+              key={projectIndex}
               name={project.name}
               image={project.image}
               description={project.description}
