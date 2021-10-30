@@ -21,6 +21,7 @@ export default function ProjectProfile(props) {
               ? props.previewProps.website + '  |  ' + props.previewProps.github
               : props.previewProps.github
           }
+          onChange={() => {}}
         />
       </div>
       <div className="profile name">
