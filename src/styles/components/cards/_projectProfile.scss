@@ -91,10 +91,12 @@
   .profile.image {
     grid-column: 1/13;
     @include flex-center;
+    height: 100%;
   }
 
   .profile-img {
     width: auto;
     height: 80%;
+    max-width: 100%;
   }
 }

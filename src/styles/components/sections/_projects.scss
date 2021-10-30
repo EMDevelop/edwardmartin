@@ -3,16 +3,19 @@
   height: 92vh;
   @include grid-12;
   grid-template-rows: 1fr 8fr;
+  margin-bottom: 40px;
 }
 
 .project-list {
   grid-column: 1/13;
   max-height: 70vh;
   display: grid;
+  grid-gap: $text-margin;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin-right: $text-margin;
   margin-left: $text-margin;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1000px) {
