@@ -14,11 +14,24 @@ export default function ProjectPreview(props) {
     <div className="project-preview-card">
       <div className="preview-card-click" onClick={() => setIsOpen(true)}>
         <h4>{props.name}</h4>
-        <img
-          className="preview-image"
-          src={props.image}
-          alt="veganswap.co.uk preview image"
-        />
+        {props.image === 'youtube' ? (
+          <iframe
+            width="560"
+            className="preview-image"
+            height="315"
+            src="https://www.youtube.com/embed/pigj0cxPyOQ?start=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        ) : (
+          <img
+            className="preview-image"
+            src={props.image}
+            alt="veganswap.co.uk preview image"
+          />
+        )}
       </div>
       <div>
         {isOpen && (

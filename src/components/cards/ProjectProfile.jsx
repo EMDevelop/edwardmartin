@@ -37,11 +37,23 @@ export default function ProjectProfile(props) {
         </p>
       </div>
       <div className="profile image">
-        <img
-          className="profile-img"
-          src={props.previewProps.image}
-          alt="website preview"
-        />
+        {props.previewProps.image === 'youtube' ? (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pigj0cxPyOQ?start=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        ) : (
+          <img
+            className="profile-img"
+            src={props.previewProps.image}
+            alt="website preview"
+          />
+        )}
       </div>
     </div>
   );

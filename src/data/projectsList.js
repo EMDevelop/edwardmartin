@@ -1,5 +1,14 @@
 const projectsList = [
   {
+    name: `Kusari`,
+    description: `Named after the Japanese word for 'chain', this project sets out to consolidate investors Cryptocurrency investments into one application. Users can see their live balance from multiple chains including Ethereum, Binance Chain, and Bitcoin. We've structured the application to allow us to scale the number of chains we're consuming data from, as well as swap out API providers where needed.`,
+    github: `https://github.com/EMDevelop/edwardmartin`,
+    language: `Javascript, Python`,
+    image: `youtube`,
+    tools: `React, SCSS, Django, PostgreSQL, AWS, Covalent, Coingecko, Web3, Moralis, Blockcypher, CryptoCompare`,
+    website: `www.kusari.app`,
+  },
+  {
     name: `VeganSwap`,
     description: `My goal of this project is to make it easier for people to use vegan alternatives to the meals and products they love. I am hoping to bring together a community of Vegan, Vegetarian and Meat/Dairy eaters (so everybody), and work together to add alternatives using the apps Add" functionality.`,
     github: `https://github.com/EMDevelop/veganswap`,
@@ -80,15 +89,15 @@ const projectsList = [
     tools: `Command Line, Twillo API, Google Sheets`,
     website: ``,
   },
-  // {
-  //   name: ``,
-  //   description: ``,
-  //   github: ``,
-  //   language: ``,
-  //   image: ``,
-  //   tools: ``,
-  //   website: ``,
-  // },
+  {
+    name: `Acebook`,
+    description: `This is a clone of Facebook, build over the space of a week during Makers Academy. We used Ruby On Rails as our web framework, and hosted the application on Heroku. This project features the all CRUD operations, including image storage on AWS S3.`,
+    github: `https://github.com/EMDevelop/acebook-all-css-no-style`,
+    language: `Ruby`,
+    image: `https://raw.githubusercontent.com/EMDevelop/public_resources/main/gifs/AllStyleNoCSS/demo.gif`,
+    tools: `Rails, Heroku, AWS S3`,
+    website: ``,
+  },
 ];
 
 export default projectsList;
